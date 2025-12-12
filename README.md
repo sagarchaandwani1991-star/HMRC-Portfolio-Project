@@ -132,10 +132,15 @@ Predictive Auditing: Use Python/Machine Learning to predict which Taxpayers in t
 | :--- | :--- | :--- |
 
 |**HMRC_TAX_PAYER**|	AuditRiskScore	| Internal score (0-100) predicting likelihood of non-compliance. |
+
 |**HMRC_TAX_PAYER**|	Sector	Industry classification (e.g., Construction, Retail). |
+
 |**HMRC_FACT_FILING**|	PenaltyAmount	Financial penalty levied for late submissions. |
+
 |**HMRC_FACT_OPERATION**|	Avg_Wait_Time	Time in minutes a customer waits in queue (Cleaned using ABS function). |
+
 |**HMRC_FACT_OPERATION**|	CSAT_Score	Customer Satisfaction Score (Normalized to 0-100%). |
+
 |**HMRC_TAXDUE/PAID**| Tax_Gap	Calculated as AmountDue - AmountPaid. Negative values indicate surplus collection. |
 
 
