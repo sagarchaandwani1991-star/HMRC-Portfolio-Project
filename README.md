@@ -77,14 +77,18 @@ Designed a **Star Schema** data model to enable cross-filtering between Operatio
 *Diagnosing the root cause of the low 50% CSAT score.*
 ![Operations Dashboard](Screenshot/2.Operation_&_Customer_Experience.png)
 *   **Call Volume Analysis (Donut Chart):** The most critical insight on the page. It reveals that **39.9%** of calls are for "Penalty Appeals." This is a process that could be automated.
+  
 *   **Wait Time Trends (Line Chart):** Shows cyclical spikes in wait times, correlating with filing deadlines (Jan/Feb). This helps Workforce Planning schedule staff more effectively.
+  
 *   **CSAT by Channel (Bar Chart):** Shows that "Phone" remains the dominant channel despite having lower satisfaction than digital channels.
 
 ### 3. Risk & Audit Intelligence
 *An interactive "Workbench" for the Internal Audit team.*
 ![Risk Dashboard](Screenshot/3.Risk_&_Audit.png)
 *   **Risk Matrix (Scatter Plot):** Plots `Audit Risk Score` (Y-Axis) vs `Tax Gap` (X-Axis). Using quadrant analysis, auditors can spot outliers (High Score + High Gap) immediately.
+  
 *   **Decomposition Tree:** Allows the user to drill down into the £1.3bn High Risk Debt by Region -> Sector -> Filing Method to find the root cause.
+  
 *   **Top 50 Target List (Table):** A generated "Hit List" of specific Taxpayer IDs that require immediate investigation, sorted by Risk Score.
 
 ---
