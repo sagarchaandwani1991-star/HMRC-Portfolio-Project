@@ -27,9 +27,9 @@ HMRC leadership required a centralized BI solution to address three critical blo
 3. [Data Structure & Modelling](#-data-structure--modelling)
 4. [Dashboard Deep Dive](#-dashboard-deep-dive)
 5. [Strategic Recommendations](#-strategic-recommendations)
-6. [Technical Implementation](#-technical-implementation--expertise)
-7. [Data Dictionary](#-data-dictionary)
-8. [Assumptions & Future Scope](#-assumptions--future-scope)
+6. [Assumptions & Future Scope](#-assumptions--future-scope)
+7. [Technical Implementation](#-technical-implementation--expertise)
+8. [Data Dictionary](#-data-dictionary)
 
 ---
 
@@ -104,14 +104,16 @@ Designed a **Star Schema** data model to enable cross-filtering between Operatio
 
 ---
 
-🧠 Assumptions & Future Scope
-Assumptions:
+### 🧠 Assumptions & Future Scope
+
+
+## Assumptions:
 Negative Tax Gap: The data shows a surplus (Negative Gap). It is assumed this includes the recovery of debts from previous financial years.
 CSAT Scale: Assumed CSAT is an aggregate score out of 100 based on the raw data distribution.
+
 Future Scope:
 Sentiment Analysis: Integrate text analytics on "Call Topics" to understand specific "Form Confusion" pain points.
-Predictive Auditing: Use Python/Machine Learning to predict which Taxpayers in the "Retail" sector are most likely to underpay next quarter based on filing history.
-
+Predictive Auditing: Use Python/Machine Learning to predict which Taxpayers in the "Retail" sector are mo
 
 ---
 
@@ -124,28 +126,17 @@ Predictive Auditing: Use Python/Machine Learning to predict which Taxpayers in t
 ---
 
 
+### 📚 Data Dictionary
+
 📚 Data Dictionary
-Table
-Column
-Description
-HMRC TAX_PAYER
-AuditRiskScore
-Internal score (0-100) predicting likelihood of non-compliance.
-HMRC TAX_PAYER
-Sector
-Industry classification (e.g., Construction, Retail).
-HMRC FACT_FILING
-PenaltyAmount
-Financial penalty levied for late submissions.
-HMRC FACT_OPERATION
-Avg Wait Time (Corrected)
-Time in minutes a customer waits in queue (Cleaned using ABS).
-HMRC FACT_OPERATION
-CSAT_Score
-Customer Satisfaction Score (Normalized to 0-100%).
-HMRC TAXDUE/TAXPAID
-Tax Gap
-Calculated as AmountDue - AmountPaid. Negative values indicate surplus collection.
+A reference guide to the core tables used in the Star Schema.
+Table	Column	Description
+HMRC_TAX_PAYER	AuditRiskScore	Internal score (0-100) predicting likelihood of non-compliance.
+HMRC_TAX_PAYER	Sector	Industry classification (e.g., Construction, Retail).
+HMRC_FACT_FILING	PenaltyAmount	Financial penalty levied for late submissions.
+HMRC_FACT_OPERATION	Avg_Wait_Time	Time in minutes a customer waits in queue (Cleaned using ABS function).
+HMRC_FACT_OPERATION	CSAT_Score	Customer Satisfaction Score (Normalized to 0-100%).
+HMRC_TAXDUE/PAID	Tax_Gap	Calculated as AmountDue - AmountPaid. Negative values indicate surplus collection.
 
 
 ---
