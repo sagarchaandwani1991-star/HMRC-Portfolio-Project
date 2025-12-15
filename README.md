@@ -1,5 +1,3 @@
-# HMRC-Portfolio-Project
-
 > **Disclaimer:** This is a personal portfolio project using a synthetic dataset. It is a simulation of real-world public sector challenges and is not affiliated with His Majesty's Revenue and Customs.
 
 <div align="center">
