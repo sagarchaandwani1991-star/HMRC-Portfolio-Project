@@ -1,5 +1,7 @@
 # HMRC-Portfolio-Project
 
+Disclaimer: This is a personal portfolio project using a synthetic dataset. It is a simulation of real-world business challenges and is not affiliated with [Company Name].
+
 # 🏛️ HMRC Strategic Performance Monitor: Compliance & Operations
 
 ![Power BI](https://img.shields.io/badge/Power_BI-Desktop-yellow?style=for-the-badge&logo=power-bi)
